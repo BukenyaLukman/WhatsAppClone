@@ -104,13 +104,6 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if(currentUser != null){
-            SendUserToMainActivity();
-        }
-    }
 
     private void SendUserToMainActivity() {
         Intent mainIntent = new Intent(LoginActivity.this,MainActivity.class);
